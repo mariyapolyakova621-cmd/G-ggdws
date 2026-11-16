@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Миля — кафе в Шилово</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef3f1;--surface:#fff;--ink:#16302b;--muted:#4f6862;--accent:#b3263e;--on-accent:#fff;--line:#cfdcd8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1c19;--surface:#16302b;--ink:#eaf2ef;--muted:#a3bab4;--accent:#ff6b82;--on-accent:#1a0a0e;--line:#2a4a43}}
+:root[data-theme="dark"]{--bg:#0f1c19;--surface:#16302b;--ink:#eaf2ef;--muted:#a3bab4;--accent:#ff6b82;--on-accent:#1a0a0e;--line:#2a4a43}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Onest,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Unbounded,"Arial Black",system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.hero{padding:56px 0 40px}
+.hero h1{font-size:clamp(64px,22vw,150px);font-weight:700;letter-spacing:-.03em;color:var(--accent)}
+.hero p.lead{font-size:clamp(20px,4.5vw,28px);font-family:Unbounded,system-ui,sans-serif;font-weight:500;margin:8px 0 12px;max-width:20ch}
+.hero p.sub{color:var(--muted);max-width:46ch;margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:14px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.main{background:var(--accent);color:var(--on-accent)}
+.btn.alt{color:var(--ink);border-color:var(--line)}
+.rate{margin-top:28px;display:flex;gap:10px;align-items:baseline;color:var(--muted)}
+.rate b{font:700 28px Unbounded,system-ui,sans-serif;color:var(--ink)}
+section{padding:40px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(24px,5vw,34px);margin-bottom:22px}
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.menu div{background:var(--surface);border-radius:20px;padding:20px 22px}
+.menu h3{font-size:18px;margin-bottom:8px}
+.menu p{margin:0;color:var(--muted)}
+.feat{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.feat li{border:1px solid var(--line);border-radius:999px;padding:8px 16px;background:var(--surface)}
+.rev{display:grid;gap:16px}
+blockquote{margin:0;padding:0 0 0 18px;border-left:4px solid var(--accent)}
+blockquote cite{display:block;color:var(--muted);font-size:15px;margin-top:4px;font-style:normal}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:10px 24px;margin:0 0 24px}
+dt{color:var(--muted)}dd{margin:0;font-weight:500}
+footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+:root{--c1:#ff6b4a;--c2:#ffc43d;--c3:#2fb67c;--c4:#7c5cff;--c5:#ff4f9a}
+body{overflow-x:hidden;background:radial-gradient(60vmax 40vmax at 95% -5%,color-mix(in srgb,var(--c2) 40%,transparent),transparent),radial-gradient(50vmax 40vmax at -10% 35%,color-mix(in srgb,var(--c5) 22%,transparent),transparent),radial-gradient(45vmax 35vmax at 100% 80%,color-mix(in srgb,var(--c3) 22%,transparent),transparent),var(--bg)}
+.hero{position:relative}
+.hero h1{display:flex}
+.hero h1 span{display:inline-block;animation:pop .9s cubic-bezier(.3,1.7,.5,1) both;animation-delay:calc(var(--i)*110ms)}
+.hero h1 span:nth-child(1){color:var(--accent)}.hero h1 span:nth-child(2){color:var(--c1)}.hero h1 span:nth-child(3){color:var(--c4)}.hero h1 span:nth-child(4){color:var(--c3)}
+@keyframes pop{from{opacity:0;transform:translateY(60px) rotate(-12deg) scale(.5)}to{opacity:1;transform:none}}
+.fl{position:absolute;font-size:clamp(34px,9vw,64px);animation:float 6s ease-in-out infinite;animation-delay:var(--d);filter:drop-shadow(0 8px 10px rgba(0,0,0,.2));pointer-events:none;user-select:none}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-18px) rotate(8deg)}}
+.btn{transition:transform .2s}.btn:hover{transform:translateY(-3px) scale(1.04)}
+.btn.main{background:linear-gradient(135deg,var(--accent),var(--c1));border-color:transparent;animation:ring 2.4s infinite}
+@keyframes ring{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 55%,transparent)}70%,100%{box-shadow:0 0 0 16px transparent}}
+.strip{overflow:hidden;background:linear-gradient(90deg,var(--c1),var(--c5),var(--c4),var(--c3),var(--c2));color:#1a1a1a;transform:rotate(-1.5deg);margin:8px -10px 24px;padding:12px 0;font:700 18px Unbounded,system-ui,sans-serif;white-space:nowrap}
+.strip div{display:inline-block;animation:run 28s linear infinite}
+@keyframes run{to{transform:translateX(-50%)}}
+section h2::after{content:"";display:block;height:6px;width:72px;margin-top:10px;border-radius:6px;background:linear-gradient(90deg,var(--c1),var(--c2),var(--c3))}
+.menu div{position:relative;border-top:8px solid var(--k);transition:transform .25s,box-shadow .25s}
+.menu div:hover{transform:translateY(-8px) rotate(-1deg);box-shadow:0 16px 30px color-mix(in srgb,var(--k) 35%,transparent)}
+.menu i{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;font-style:normal;font-size:28px;background:color-mix(in srgb,var(--k) 28%,transparent);margin-bottom:12px;transition:transform .4s}
+.menu div:hover i{transform:rotate(360deg) scale(1.15)}
+.feat li{transition:transform .2s,background .2s}.feat li:hover{transform:rotate(-3deg) scale(1.07);background:color-mix(in srgb,var(--c2) 45%,var(--surface))}
+.feat li:nth-child(5n+1){border-color:var(--c1)}.feat li:nth-child(5n+2){border-color:var(--c3)}.feat li:nth-child(5n+3){border-color:var(--c4)}.feat li:nth-child(5n+4){border-color:var(--c5)}.feat li:nth-child(5n+5){border-color:var(--c2)}
+blockquote:nth-child(1){border-color:var(--c1)}blockquote:nth-child(2){border-color:var(--c4)}blockquote:nth-child(3){border-color:var(--c3)}
+.rate b{background:linear-gradient(135deg,var(--c1),var(--c5));-webkit-background-clip:text;background-clip:text;color:transparent}
+.js .rv{opacity:0;transform:translateY(30px) scale(.97);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.9,.3,1.2);transition-delay:var(--rd,0ms)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="hero">
+  <span class="fl" style="right:2%;top:30px;--d:0s">🍣</span>
+  <span class="fl" style="right:24%;top:150px;--d:1.2s">🍕</span>
+  <span class="fl" style="right:6%;top:260px;--d:2.4s">🍲</span>
+  <span class="fl" style="right:30%;top:20px;--d:3.4s">🍤</span>
+  <h1 aria-label="Миля"><span style="--i:0">М</span><span style="--i:1">и</span><span style="--i:2">л</span><span style="--i:3">я</span></h1>
+  <p class="lead">Борщ, суши и пицца в Шилово</p>
+  <p class="sub">Уютное кафе на Советской улице. Большое меню, объёмные порции, приветливый персонал. Можно поесть на месте или взять с собой.</p>
+  <div class="btns">
+    <a class="btn main" id="call" href="tel:+79209508999" target="_top">Позвонить</a>
+    <a class="btn alt" href="https://yandex.ru/maps/org/milya/73537704104" target="_blank" rel="noopener">Проложить маршрут</a>
+  </div>
+  <div class="rate"><b>4,5</b><span>рейтинг на Яндекс Картах, 271 оценка</span></div>
+</header>
+
+<div class="strip" aria-hidden="true"><div>🍣 Суши 🍜 Борщ 🍕 Пицца 🍲 Солянка 🥩 Жаркое 🍱 Роллы ☕ Кофе &nbsp; 🍣 Суши 🍜 Борщ 🍕 Пицца 🍲 Солянка 🥩 Жаркое 🍱 Роллы ☕ Кофе &nbsp; 🍣 Суши 🍜 Борщ 🍕 Пицца 🍲 Солянка 🥩 Жаркое 🍱 Роллы ☕ Кофе &nbsp; 🍣 Суши 🍜 Борщ 🍕 Пицца 🍲 Солянка 🥩 Жаркое 🍱 Роллы ☕ Кофе &nbsp; </div></div>
+<section id="menu">
+  <h2>Что у нас готовят</h2>
+  <div class="menu">
+    <div style="--k:var(--c1)"><i>🍣</i><h3>Суши и роллы</h3><p>Гости отдельно хвалят суши и свежую рыбу.</p></div>
+    <div style="--k:var(--c5)"><i>🍲</i><h3>Первые блюда</h3><p>Борщ и солянка.</p></div>
+    <div style="--k:var(--c3)"><i>🥩</i><h3>Горячее</h3><p>Жаркое из свинины и другие блюда домашней кухни.</p></div>
+    <div style="--k:var(--c2)"><i>🍕</i><h3>Пицца</h3><p>Круглая и большая, на компанию.</p></div>
+    <div style="--k:var(--c4)"><i>☕</i><h3>Чай и кофе</h3><p>Кофе с собой, чайная карта.</p></div>
+  </div>
+</section>
+
+<section id="features">
+  <h2>Удобства</h2>
+  <ul class="feat">
+    <li>Еда с собой</li><li>Кофе с собой</li><li>Пандус</li><li>Туалет для маломобильных гостей</li><li>Полный доступ для колясок</li>
+  </ul>
+</section>
+
+<section id="reviews">
+  <h2>Что говорят гости</h2>
+  <div class="rev">
+    <blockquote>Зашёл поужинать, на следующий день пришёл снова. Суши лучше московских.<cite>Станислав Щербаков, ноябрь</cite></blockquote>
+    <blockquote>Борщ отменный, подача хорошая, меню очень обширное.<cite>Лика Алексеевна, сентябрь</cite></blockquote>
+    <blockquote>Нравится и детям, и взрослым. Порции объёмные.<cite>Дарья Джурук, июль</cite></blockquote>
+  </div>
+</section>
+
+<section id="contacts">
+  <h2>Как нас найти</h2>
+  <dl>
+    <dt>Адрес</dt><dd>р. п. Шилово, Советская ул., 55</dd>
+    <dt>Телефон</dt><dd><a href="tel:+79209508999" target="_top">+7 (920) 950-89-99</a></dd>
+    <dt>ВКонтакте</dt><dd><a href="https://vk.ru/cafemileshilovo" target="_blank" rel="noopener">vk.ru/cafemileshilovo</a></dd>
+    <dt>Часы работы</dt><dd>Открываемся в 11:00. Точный график уточняйте по телефону.</dd>
+    <dt>Рядом</dt><dd>Остановка «Спасская улица», 116 м</dd>
+  </dl>
+  <a class="btn main" href="https://yandex.ru/maps/org/milya/73537704104" target="_blank" rel="noopener">Открыть на Яндекс Картах</a>
+</section>
+</main>
+<footer><div class="wrap">Кафе «Миля», Рязанская область, р. п. Шилово</div></footer>
+<script>
+document.documentElement.classList.add('js');
+try{
+var els=document.querySelectorAll('section h2,.menu div,.feat li,blockquote,dl,#contacts .btn');
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+els.forEach(function(el,i){el.classList.add('rv');el.style.setProperty('--rd',(Array.prototype.indexOf.call(el.parentNode.children,el)*90)+'ms');io.observe(el)});
+}catch(e){document.querySelectorAll('.rv').forEach(function(x){x.classList.add('in')})}
+var c=document.getElementById('call');
+if(c){c.addEventListener('click',function(){
+var n='+7 (920) 950-89-99';
+try{navigator.clipboard.writeText('+79209508999')}catch(e){}
+c.textContent=n;
+setTimeout(function(){c.textContent='Позвонить'},6000);
+});}
+</script>
+</body>
+</html>
